@@ -25,6 +25,14 @@ export default function PaginaInicial() {
                     </div>
                 </a>
                 <a className={"perfil-links-article-a"}
+                   href={"https://x.com/yellowpinguim"} target={"_blank"}>
+                    <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
+                        <img src={"images/twitter-x.svg"} alt={"Twitter icon"}></img>
+                        <p className={"perfil-links-article-a-buttons-p"}>X (Twitter)</p>
+                        <img src={"images/external-link.svg"} alt={"External link icon"}></img>
+                    </div>
+                </a>
+                <a className={"perfil-links-article-a"}
                    href={"https://bsky.app/profile/yellowpinguim.bsky.social"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
                         <img src={"images/bluesky.svg"} alt={"Bluesky icon"}></img>
