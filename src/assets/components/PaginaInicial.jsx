@@ -1,49 +1,60 @@
+import { Linkedin, Github, Twitter, Unlink2, Mail, Bookmark } from 'lucide-react';
+import styled from 'styled-components';
+
+const Description = styled.div`
+    position: relative;
+    .lucide {
+        position: absolute;
+        top: -4px;
+        right: 20px;
+    }
+`;
 
 export default function PaginaInicial() {
     return (
         <main>
             <figure>
-                <img src={"images/fotoPerfil.jpg"} alt={"Foto de perfil"} className={"perfil-foto"}/>
+                <img src={"images/fotoPerfil.jpg"} alt={"Foto de perfil"} className={"perfil-foto"} />
             </figure>
             <h1 className={"perfil-nome"}>Marcos Lopes</h1>
-            <p className={"perfil-descricao"}>Técnico em Informática para Internet! 💻</p>
+            <p className={"perfil-descricao"}>Desenvolvedor Full-Stack! 💻</p>
             <article className={"perfil-links-article display-flex-center"}>
+                <Description className="perfil-links-description">
+                        <p>Ofereço serviços de design profissional, criando banners, posters, capas e 
+                            outros materiais visuais personalizados. Além disso, atuo como desenvolvedor 
+                            full stack, trabalhando no desenvolvimento e manutenção de sites, programas, 
+                            softwares e sistemas. Também tenho experiência com bancos de dados e 
+                            configuração de servidores.</p>
+                        <Bookmark fill='white' />
+                </Description>
                 <a className={"perfil-links-article-a"}
-                   href={"https://www.linkedin.com/in/marcosalveslopesjunior"} target={"_blank"}>
+                    href={"https://www.linkedin.com/in/marcosalveslopesjunior"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <img src={"images/linkedin.svg"} alt={"LinkedIn icon"}></img>
+                        <Linkedin/>
                         <p className={"perfil-links-article-a-buttons-p"}>LinkedIn</p>
-                        <img src={"images/external-link.svg"} alt={"External link icon"}></img>
+                        <Unlink2 />
                     </div>
                 </a>
                 <a className={"perfil-links-article-a"}
-                   href={"https://github.com/MarcosAlves90"} target={"_blank"}>
+                    href={"https://github.com/MarcosAlves90"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <img src={"images/github.svg"} alt={"GitHub icon"}></img>
+                        <Github/>
                         <p className={"perfil-links-article-a-buttons-p"}>GitHub</p>
-                        <img src={"images/external-link.svg"} alt={"External link icon"}></img>
+                        <Unlink2 />
                     </div>
                 </a>
                 <a className={"perfil-links-article-a"}
-                   href={"https://x.com/yellowpinguim"} target={"_blank"}>
+                    href={"https://x.com/yellowpinguim"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <img src={"images/twitter-x.svg"} alt={"Twitter icon"}></img>
+                        <Twitter/>
                         <p className={"perfil-links-article-a-buttons-p"}>X (Twitter)</p>
-                        <img src={"images/external-link.svg"} alt={"External link icon"}></img>
-                    </div>
-                </a>
-                <a className={"perfil-links-article-a"}
-                   href={"https://bsky.app/profile/yellowpinguim.bsky.social"} target={"_blank"}>
-                    <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <img src={"images/bluesky.svg"} alt={"Bluesky icon"}></img>
-                        <p className={"perfil-links-article-a-buttons-p"}>Bluesky</p>
-                        <img src={"images/external-link.svg"} alt={"External link icon"}></img>
+                        <Unlink2 />
                     </div>
                 </a>
             </article>
             <article className={"perfil-icons-article display-flex-center"}>
                 <a href={"mailto:MarcosAlves25@proton.me"} className={"display-flex-center"}>
-                    <img src={"images/email.svg"} alt={"Email icon"}></img>
+                    <Mail />
                 </a>
             </article>
         </main>
