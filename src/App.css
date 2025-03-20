@@ -57,11 +57,11 @@
   .perfil-links-description {
     border: 2px solid white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     background-color: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
-    margin-bottom: 15px;
-  
+    border-bottom: dashed 2px white;
+
     p {
       margin: 0;
       text-align: justify;
@@ -91,6 +91,17 @@
       padding: 20px;
       margin: 0;
       color: white;
+    }
+
+    &.primary {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 0 0 10px 10px;
+      border-top: none;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        transform: unset !important;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
 
   }

@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Unlink2, Mail, Bookmark } from 'lucide-react';
+import { Linkedin, Github, Twitter, Unlink2, Mail, Bookmark, BriefcaseBusiness } from 'lucide-react';
 import styled from 'styled-components';
 
 const Description = styled.div`
@@ -27,6 +27,14 @@ export default function PaginaInicial() {
                             configuração de servidores.</p>
                         <Bookmark fill='white' />
                 </Description>
+                <a className={"perfil-links-article-a"}
+                   href={"https://marcos-lopes-portfolio.vercel.app/"} target={"_blank"}>
+                    <div className={"perfil-links-article-a-buttons primary display-flex-center-justify-between"}>
+                        <BriefcaseBusiness />
+                        <p className={"perfil-links-article-a-buttons-p"}>Meu portfólio</p>
+                        <Unlink2 />
+                    </div>
+                </a>
                 <a className={"perfil-links-article-a"}
                     href={"https://www.linkedin.com/in/marcosalveslopesjunior"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
