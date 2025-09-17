@@ -27,11 +27,8 @@ export default function PaginaInicial() {
                     style={{ borderBottom: 'dashed 2px var(--color-primary)' }}
                 >
                     <p>
-                        Ofereço serviços de design profissional, criando banners, posters, capas e
-                        outros materiais visuais personalizados. Além disso, atuo como desenvolvedor
-                        full stack, trabalhando no desenvolvimento e manutenção de sites, programas,
-                        softwares e sistemas. Também tenho experiência com bancos de dados e
-                        configuração de servidores.
+                        <strong>Design criativo</strong> e <strong>Desenvolvimento Full Stack</strong>.
+                        Crio artes visuais impactantes e desenvolvo sites, sistemas e apps sob medida.
                     </p>
                     <Bookmark className="absolute -top-1 right-5 fill-primary" aria-hidden="true" />
                 </div>
