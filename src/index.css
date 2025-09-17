@@ -1,14 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-background: var(--background);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    @apply p-6;
+    --primary: #f37575;
+    --secondary: #a83f3f;
+    --background: #6d0004;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+    color: var(--primary);
+    background-color: var(--background);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+    --common-font-family: "Inter";
+    font-family: var(--common-font-family), sans-serif;
+}
+
+.perfil-links-article-a {
+    @apply flex items-center justify-center w-full;
+}
+
+.perfil-links-article-a-buttons {
+    @apply flex items-center justify-between w-full border-2 border-primary bg-primary/6 rounded-xl transition duration-200 backdrop-blur-sm px-5 hover:scale-102;
+
+    .perfil-links-article-a-buttons-p {
+        @apply font-bold p-5;
+    }
+
+    &.first {
+        @apply bg-primary/30 rounded-b-xl rounded-t-none border-t-0 transition-colors duration-200 hover:scale-100 hover:bg-primary/20;
+    }
+}
+
+.perfil-icons-article {
+    a .lucide {
+        @apply transition duration-200;
+    }
+
+    a .lucide:hover {
+        @apply scale-125;
+    }
+}
+
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 300;
+    transform: translateZ(0);
+
+    &:before {
+        content: "";
+        top: -10rem;
+        left: -10rem;
+        width: calc(100% + 20rem);
+        height: calc(100% + 20rem);
+        z-index: 9999;
+        position: fixed;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+        opacity: 0.15;
+        pointer-events: none;
+        -webkit-animation: noise 1s steps(2) infinite;
+        animation: noise 1s steps(2) infinite;
+    }
+}
+
+@-webkit-keyframes noise {
+    to {
+        transform: translate3d(-7rem, 0, 0);
+    }
+}
+
+@keyframes noise {
+    0% {
+        transform: translate3d(0, 9rem, 0);
+    }
+    10% {
+        transform: translate3d(-1rem, -4rem, 0);
+    }
+    20% {
+        transform: translate3d(-8rem, 2rem, 0);
+    }
+    30% {
+        transform: translate3d(9rem, -9rem, 0);
+    }
+    40% {
+        transform: translate3d(-2rem, 7rem, 0);
+    }
+    50% {
+        transform: translate3d(-9rem, -4rem, 0);
+    }
+    60% {
+        transform: translate3d(2rem, 6rem, 0);
+    }
+    70% {
+        transform: translate3d(7rem, -8rem, 0);
+    }
+    80% {
+        transform: translate3d(-9rem, 1rem, 0);
+    }
+    90% {
+        transform: translate3d(6rem, -5rem, 0);
+    }
+    to {
+        transform: translate3d(-7rem, 0, 0);
+    }
 }
