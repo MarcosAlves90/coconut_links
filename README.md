@@ -10,8 +10,8 @@
 
 > Personal profile link platform, inspired by Linktree.
 
-### Adjustments and improvements
+## Adjustments and improvements
 
 The project is still under development and the next updates will focus on the following tasks:
 
-- [ ] Add a bio
+- [X] Add a bio
