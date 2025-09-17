@@ -38,7 +38,7 @@ export default function PaginaInicial() {
                 <a className={"perfil-links-article-a"}
                     href={"https://www.linkedin.com/in/marcosalveslopesjunior"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <Linkedin/>
+                        <Linkedin />
                         <p className={"perfil-links-article-a-buttons-p"}>LinkedIn</p>
                         <Unlink2 />
                     </div>
