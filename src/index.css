@@ -8,7 +8,7 @@
 }
 
 :root {
-    @apply p-6;
+    @apply pt-6;
     --primary: #f37575;
     --secondary: #a83f3f;
     --background: #6d0004;
