@@ -18,6 +18,16 @@ export default function LinksProfissionais() {
             label: 'GitHub',
             Icon: Github,
         },
+        {
+            href: 'https://www.instagram.com/marcos.pilgrim',
+            label: '@marcos.pilgrim',
+            Icon: Instagram,
+        },
+        {
+            href: 'https://www.instagram.com/visaoakashica',
+            label: '@visaoakashica',
+            Icon: Eye,
+        },
     ];
 
     return (
