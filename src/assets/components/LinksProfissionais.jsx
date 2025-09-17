@@ -1,4 +1,4 @@
-import { Linkedin, Github, Unlink2, BriefcaseBusiness } from 'lucide-react';
+import { Linkedin, Github, Instagram, Unlink2, BriefcaseBusiness, Eye } from 'lucide-react';
 
 export default function LinksProfissionais() {
     const links = [
