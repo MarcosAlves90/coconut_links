@@ -20,15 +20,15 @@ export default function PaginaInicial() {
             <p className={"perfil-descricao"}>Desenvolvedor Full-Stack! 💻</p>
             <article className={"perfil-links-article display-flex-center"}>
                 <Description className="perfil-links-description">
-                        <p>Ofereço serviços de design profissional, criando banners, posters, capas e 
-                            outros materiais visuais personalizados. Além disso, atuo como desenvolvedor 
-                            full stack, trabalhando no desenvolvimento e manutenção de sites, programas, 
-                            softwares e sistemas. Também tenho experiência com bancos de dados e 
-                            configuração de servidores.</p>
-                        <Bookmark fill='white' />
+                    <p>Ofereço serviços de design profissional, criando banners, posters, capas e
+                        outros materiais visuais personalizados. Além disso, atuo como desenvolvedor
+                        full stack, trabalhando no desenvolvimento e manutenção de sites, programas,
+                        softwares e sistemas. Também tenho experiência com bancos de dados e
+                        configuração de servidores.</p>
+                    <Bookmark fill='white' />
                 </Description>
                 <a className={"perfil-links-article-a"}
-                   href={"https://marcos-lopes-portfolio.vercel.app/"} target={"_blank"}>
+                    href={"https://marcos-lopes-portfolio.vercel.app/"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons primary display-flex-center-justify-between"}>
                         <BriefcaseBusiness />
                         <p className={"perfil-links-article-a-buttons-p"}>Meu portfólio</p>
