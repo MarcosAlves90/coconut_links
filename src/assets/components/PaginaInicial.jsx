@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Unlink2, Mail, Bookmark, BriefcaseBusiness } from 'lucide-react';
+import { Linkedin, Github, Unlink2, Mail, Bookmark, BriefcaseBusiness } from 'lucide-react';
 import styled from 'styled-components';
 
 const Description = styled.div`
