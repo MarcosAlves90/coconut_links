@@ -46,16 +46,8 @@ export default function PaginaInicial() {
                 <a className={"perfil-links-article-a"}
                     href={"https://github.com/MarcosAlves90"} target={"_blank"}>
                     <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <Github/>
+                        <Github />
                         <p className={"perfil-links-article-a-buttons-p"}>GitHub</p>
-                        <Unlink2 />
-                    </div>
-                </a>
-                <a className={"perfil-links-article-a"}
-                    href={"https://x.com/yellowpinguim"} target={"_blank"}>
-                    <div className={"perfil-links-article-a-buttons display-flex-center-justify-between"}>
-                        <Twitter/>
-                        <p className={"perfil-links-article-a-buttons-p"}>X (Twitter)</p>
                         <Unlink2 />
                     </div>
                 </a>
