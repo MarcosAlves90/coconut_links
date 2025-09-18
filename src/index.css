@@ -8,7 +8,7 @@
 }
 
 :root {
-    @apply pt-6;
+    @apply py-6;
     --primary: #f37575;
     --secondary: #a83f3f;
     --background: #6d0004;
@@ -20,6 +20,12 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="dark"] {
+    --primary: #ff3a3a;
+    --secondary: #c12727;
+    --background: #000000;
 }
 
 #root {
@@ -51,12 +57,13 @@
 .perfil-icons-article {
     a .lucide {
         @apply transition duration-200;
-    }
-
-    a .lucide:hover {
-        @apply scale-125;
+        &:hover {
+            @apply scale-125;
+        }
     }
 }
+
+/* Granulado de fundo */
 
 .grain {
     position: fixed;

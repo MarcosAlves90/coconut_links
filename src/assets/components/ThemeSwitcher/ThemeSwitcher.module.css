@@ -1,0 +1,74 @@
+/* Estilos para ThemeSwitcher */
+.container {
+    position: fixed;
+    bottom: 1.75rem; /* 7 */
+    left: 1.75rem; /* 7 */
+    cursor: pointer;
+    z-index: 10;
+    width: 5rem; /* 20 */
+    height: 5rem; /* 20 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+        filter: none;
+    }
+    20% {
+        transform: translate(-2px, 2px) skewX(-5deg);
+        filter: hue-rotate(20deg) brightness(1.2);
+    }
+    40% {
+        transform: translate(2px, -2px) skewX(5deg);
+        filter: hue-rotate(-20deg) brightness(0.8);
+    }
+    60% {
+        transform: translate(-2px, 2px) skewX(-5deg);
+        filter: hue-rotate(20deg) brightness(1.2);
+    }
+    80% {
+        transform: translate(2px, -2px) skewX(5deg);
+        filter: hue-rotate(-20deg) brightness(0.8);
+    }
+    100% {
+        transform: translate(0);
+        filter: none;
+    }
+}
+
+.glitch {
+    animation: glitch 0.4s linear;
+}
+
+/* Responsivo: diminuir o tamanho do botão e do ícone em telas menores */
+@media (max-width: 640px) {
+    .container {
+        width: 3.5rem; /* ~14 */
+        height: 3.5rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .img {
+        animation: spin 3.5s linear infinite; /* ligeira alteração na velocidade opcional */
+    }
+}
