@@ -16,7 +16,7 @@ export default function PaginaInicial() {
                 </figure>
                 <div className="space-y-2 text-center">
                     <h1 className="text-xl font-bold">marcos ✦</h1>
-                    <p className="text-secondary">Desenvolvedor Full-Stack!</p>
+                    {/* <p className="text-secondary">Desenvolvedor Full-Stack!</p> */}
                 </div>
             </header>
 
