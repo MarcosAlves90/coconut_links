@@ -43,7 +43,7 @@
         @apply font-bold p-5;
     }
 
-    &.first {
+    &.special {
         @apply bg-primary/30 rounded-b-xl rounded-t-none border-t-0 transition-colors duration-200 hover:scale-100 hover:bg-primary/20;
     }
 }

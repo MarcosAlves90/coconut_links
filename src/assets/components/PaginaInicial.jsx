@@ -1,4 +1,4 @@
-import { Mail, Bookmark } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import LinksProfissionais from './LinksProfissionais';
 
 export default function PaginaInicial() {
@@ -7,7 +7,7 @@ export default function PaginaInicial() {
             <header className="flex items-center flex-col space-y-3" role="banner">
                 <figure>
                     <img
-                        src="images/fotoPerfil.jpg"
+                        src="https://res.cloudinary.com/dgsywmzb2/image/upload/v1758162259/fotoPerfil_e0h0q7.jpg"
                         alt="Foto de perfil de Marcos"
                         className="rounded-full aspect-square w-[100px]"
                         width={100}
@@ -21,18 +21,6 @@ export default function PaginaInicial() {
             </header>
 
             <section className="flex items-center justify-center max-w-[600px] flex-col" aria-labelledby="sobre-mim">
-                <h2 id="sobre-mim" className="sr-only">Sobre mim</h2>
-                <div
-                    className="border-2 border-primary p-5 rounded-t-xl bg-primary/6 backdrop-blur-sm relative"
-                    style={{ borderBottom: 'dashed 2px var(--color-primary)' }}
-                >
-                    <p>
-                        <strong>Design criativo</strong> e <strong>Desenvolvimento Full Stack</strong>.
-                        Crio artes visuais impactantes e desenvolvo sites, sistemas e apps sob medida.
-                    </p>
-                    <Bookmark className="absolute -top-1 right-5 fill-primary" aria-hidden="true" />
-                </div>
-
                 <LinksProfissionais />
             </section>
 
